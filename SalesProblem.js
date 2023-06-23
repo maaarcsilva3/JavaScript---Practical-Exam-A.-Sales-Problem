@@ -36,7 +36,8 @@ function topProduct() {
         topProductName = productProfitArray[i].product;
       }
     }
-    document.getElementById("display").innerText=`${topProductName}: ${largest}`;     
+    document.getElementById("display").innerText=`${topProductName}: ${largest}`;  
+    console.log("Highest sales profit:  "+`${topProductName}: ${largest}`);   
   }
 }
 
@@ -52,7 +53,8 @@ function bottomProduct() {
         smallestProductName = productProfitArray[i].product;
       }
     }
-    document.getElementById("display").innerText=`${smallestProductName}: ${smallest}`;     
+    document.getElementById("display").innerText=`${smallestProductName}: ${smallest}`;    
+    console.log("Lowest sales profit:  "+`${smallestProductName}: ${smallest}`); 
   }
 }
 
@@ -73,5 +75,6 @@ function zeroProfitProduct(){
       }
     }
     document.getElementById("display").innerText=`${productClosestZero}: ${profitClosestZero}`; 
+    console.log("Closest to Zero:  "+`${productClosestZero}: ${profitClosestZero}`);
   }
 }
